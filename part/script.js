@@ -1,10 +1,10 @@
 const galeriProject = [
-    { "image": "img/1.png", "text": "Project 1", "url": "https://example.com/project1" },
-    { "image": "img/2.png", "text": "Project 2", "url": "https://example.com/project2" },
-    { "image": "img/3.png", "text": "Project 3", "url": "https://example.com/project3" },
-    { "image": "img/4.png", "text": "Project 4", "url": "https://example.com/project4" },
-    { "image": "img/5.png", "text": "Project 5", "url": "https://example.com/project5" },
-    { "image": "img/6.png", "text": "Project 6", "url": "https://example.com/project6" }
+    { "image": "img/1.png", "text": "Project 1", "url": "javascript:void(0)" },
+    { "image": "img/2.png", "text": "Project 2", "url": "javascript:void(0)" },
+    { "image": "img/3.png", "text": "Project 3", "url": "javascript:void(0)" },
+    { "image": "img/4.png", "text": "Project 4", "url": "javascript:void(0)" },
+    { "image": "img/5.png", "text": "Project 5", "url": "javascript:void(0)" },
+    { "image": "img/6.png", "text": "Project 6", "url": "javascript:void(0)" }
 ];
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -15,10 +15,12 @@ document.addEventListener('DOMContentLoaded', function() {
         portfolioHTML += `
             <div class="col-md-4">
                 <div class="card">
-                    <img src="${item.image}" class="card-img-top" alt="${item.text}">
-                    <div class="card-body">
-                        <p class="card-text">${item.text}</p>
-                    </div>
+                    <a href="galeri.html">
+                        <img src="${item.image}" class="card-img-top" alt="${item.text}">
+                        <div class="card-body">
+                            <p class="card-text">${item.text}</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         `;
